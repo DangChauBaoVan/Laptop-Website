@@ -127,7 +127,8 @@ const ProductDetail = () => {
 
   const { productInfo } = useSelector((state) => state.productInfoReducer);
   const { cart,quantity } = useSelector((state) => state.cartReducer);
-  const {studying,twod_design,making_video,threed_design,gaming,programming} = productInfo[0].characteristic;
+  
+  const {studying,twod_design,making_video,threed_design,gaming,programming} = productInfo[0]?.characteristic;
 
   const data2 = [studying,twod_design,making_video,threed_design,gaming,programming];
   const data = {
